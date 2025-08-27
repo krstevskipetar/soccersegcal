@@ -6,14 +6,14 @@ from torchvision.transforms.functional import resize, hflip
 import torch
 import json
 
-from sncalib.soccerpitch import SoccerPitch
+from .sncalib.soccerpitch import SoccerPitch
 from vi3o.image import imviewsc, imview, imread, imscale
 from vi3o import viewsc, view, flipp
 import numpy as np
 import cv2
 from shapely.geometry import LineString, Point
 from shapely.ops import split
-from sncalib.detect_extremities import join_points
+from .sncalib.detect_extremities import join_points
 
 
 class Line:

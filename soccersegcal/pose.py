@@ -1,7 +1,7 @@
-from dataloader import SoccerNetFieldSegmentationDataset, pview
-from sncalib.soccerpitch import SoccerPitch
-from sncalib.baseline_cameras import Camera
-from sncalib.camera import pan_tilt_roll_to_orientation, rotation_matrix_to_pan_tilt_roll
+from .dataloader import SoccerNetFieldSegmentationDataset, pview
+from .sncalib.soccerpitch import SoccerPitch
+from .sncalib.baseline_cameras import Camera
+from .sncalib.camera import pan_tilt_roll_to_orientation, rotation_matrix_to_pan_tilt_roll
 import numpy as np
 from pytorch3d.structures import Meshes
 import torch
