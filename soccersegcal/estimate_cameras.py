@@ -1,13 +1,13 @@
-from soccersegcal.dataloader import SoccerNetFieldSegmentationDataset
-from soccersegcal.pose import segs2cam
+from .dataloader import SoccerNetFieldSegmentationDataset
+from .pose import segs2cam
 import torch
-from sncalib.baseline_cameras import Camera
+from .sncalib.baseline_cameras import Camera
 import numpy as np
 from pathlib import Path
 import json
 from time import time
 from scipy.optimize import fmin
-from soccersegcal.train import LitSoccerFieldSegmentation
+from .train import LitSoccerFieldSegmentation
 import fire
 
 def main(checkpoint_path="checkpoint.ckpt", indexes=None, data=None, out='cams_out', part='valid', show=False, overwrite=False):
